@@ -36,8 +36,8 @@ int client(const char* filename,const char* ip)      // client function that acc
     struct sockaddr_in serv_addr;   //serv_addr.sin_family = 2; serv_addr.sin_port = 34835;
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_port = htons(PORT); // port
-    serv_addr.sin_addr.s_addr = inet_addr("10.8.5.221");
-//              serv_addr.sin_addr.s_addr = inet_addr("10.8.0.1");
+    serv_addr.sin_addr.s_addr = inet_addr("add your ip");
+//              serv_addr.sin_addr.s_addr = inet_addr("#####");
 
     /* Attempt a connection */
     if(connect(sockfd, (struct sockaddr *)&serv_addr, sizeof(serv_addr))<0)
